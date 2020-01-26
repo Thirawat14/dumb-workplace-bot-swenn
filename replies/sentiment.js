@@ -8,19 +8,19 @@ let iteaseLine = itease.split("\n")
 const replies = require('./replies')
 
 const checkHello = (str) => {
-    if (helloLine.indexOf(str) > 0) {
+    if (helloLine.indexOf(str) >= 0) {
         return true
     }
 }
 
 const checkRude = (str) => {
-    if (rudeLine.indexOf(str) > 0) {
+    if (rudeLine.indexOf(str) >= 0) {
         return true
     }
 }
 
 const checkITease = (str) => {
-    if (iteaseLine.indexOf(str) > 0) {
+    if (iteaseLine.indexOf(str) >= 0) {
         return true
     }
 }
